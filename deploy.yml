@@ -6,7 +6,7 @@
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: "/var/lib/jenkins/workspace/MyMavenWebApp-CICD/my-maven-app.war"
+        src: "/var/lib/jenkins/workspace/MyMavenWebApp-CICD/target/my-maven-app.war"
         dest: "/opt/tomcat/webapps/my-maven-app.war"
         remote_src: no
 
